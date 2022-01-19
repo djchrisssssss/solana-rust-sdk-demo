@@ -1,0 +1,31 @@
+[package]
+name = "solana-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-client = "^1.9.4"
+solana-sdk = "^1.9.4"
+solana-program = "^1.9.4"
+
+[[bin]]
+name = "readkeypair"
+path = "src/readkeypair.rs"
+
+[[bin]]
+name = "connection"
+path = "src/connection.rs"
+
+[[bin]]
+name = "wssconnection"
+path = "src/wssconnection.rs"
+
+[[bin]]
+name = "airdrop"
+path = "src/airdrop.rs"
+
+[[bin]]
+name = "transfer_sol"
+path = "src/transfer_sol.rs"
