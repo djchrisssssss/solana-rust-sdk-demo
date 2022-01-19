@@ -1,1 +1,1 @@
-# solana-rust-sdk-demo-
+# solana-rust-sdk-demo
