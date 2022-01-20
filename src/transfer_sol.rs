@@ -7,14 +7,19 @@ use solana_sdk::signer::keypair::read_keypair_file;
 // use solana_sdk::native_token::LAMPORTS_PER_SOL;
 
 fn main() {
+
+    //read wallet from
     let from = read_keypair_file("/Users/chris/.config/solana/id.json").unwrap();
     let frompubkey = from.pubkey();
 
+    //read wallet to
     let to = read_keypair_file("/Users/chris/.config/solana/ag.json").unwrap();
     let topubkey = to.pubkey();
-
+    
+    //how many lamport you would like to transfer
     let lamports_to_send = 1000000000;
 
+    //setting cluster
     let rpc_url = String::from("https://api.devnet.solana.com");
     let connection = RpcClient::new_with_commitment(rpc_url, CommitmentConfig::confirmed());
 
