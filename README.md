@@ -2,6 +2,8 @@
 
 It won't help so much for your on-chain program skill but help your Rust skill.
 
+Most code are from https://solanacookbook.com/
+
 # How to use
 
 `cargo run --bin <filename>`
